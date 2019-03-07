@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ObjCExceptionCatch"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Small wrapper function that catches NSExceptions and converts them to NSErrors."
 
   # This description is used to generate tags and improve search results.
