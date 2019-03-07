@@ -11,6 +11,7 @@
 		0A534343223126380059006C /* ObjCExceptionCatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A534342223126380059006C /* ObjCExceptionCatchTests.m */; };
 		0A534345223126380059006C /* ObjCExceptionCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A534337223126380059006C /* ObjCExceptionCatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A534373223127240059006C /* ObjCExceptionCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A534372223127240059006C /* ObjCExceptionCatch.m */; };
+		0A53437B223157EC0059006C /* ObjCExceptionCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53437A223157EC0059006C /* ObjCExceptionCatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		0A534342223126380059006C /* ObjCExceptionCatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCExceptionCatchTests.m; sourceTree = "<group>"; };
 		0A534344223126380059006C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A534372223127240059006C /* ObjCExceptionCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCExceptionCatch.m; sourceTree = "<group>"; };
+		0A53437A223157EC0059006C /* ObjCExceptionCatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCExceptionCatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		0A534336223126380059006C /* ObjCExceptionCatch */ = {
 			isa = PBXGroup;
 			children = (
+				0A53437A223157EC0059006C /* ObjCExceptionCatch.swift */,
 				0A534337223126380059006C /* ObjCExceptionCatch.h */,
 				0A534372223127240059006C /* ObjCExceptionCatch.m */,
 				0A534338223126380059006C /* Info.plist */,
@@ -150,6 +153,7 @@
 				TargetAttributes = {
 					0A534333223126380059006C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					0A53433C223126380059006C = {
 						CreatedOnToolsVersion = 10.1;
@@ -197,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A534373223127240059006C /* ObjCExceptionCatch.m in Sources */,
+				0A53437B223157EC0059006C /* ObjCExceptionCatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		0A534349223126380059006C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.afse.ObjCExceptionCatch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -364,6 +372,7 @@
 		0A53434A223126380059006C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -381,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.afse.ObjCExceptionCatch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -388,6 +398,7 @@
 		0A53434C223126380059006C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8527SZ2ED;
 				INFOPLIST_FILE = ObjCExceptionCatchTests/Info.plist;
@@ -405,6 +416,7 @@
 		0A53434D223126380059006C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8527SZ2ED;
 				INFOPLIST_FILE = ObjCExceptionCatchTests/Info.plist;

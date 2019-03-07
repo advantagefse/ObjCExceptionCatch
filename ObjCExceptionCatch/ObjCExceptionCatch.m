@@ -9,7 +9,9 @@
 
 #import "ObjCExceptionCatch.h"
 
-BOOL objcExceptionCatch(void (^_Nonnull tryBlock)(void), NSError **error)
+@implementation ObjC
+
++ (BOOL)catchException:(void (^_Nonnull)(void))tryBlock error:(NSError **)error
 {
     if (!tryBlock) {
         return YES;
@@ -33,5 +35,7 @@ BOOL objcExceptionCatch(void (^_Nonnull tryBlock)(void), NSError **error)
         return NO;
     }
 }
+
+@end
 
 
