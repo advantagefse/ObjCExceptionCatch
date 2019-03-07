@@ -84,6 +84,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/advantagefse/ObjCExceptionCatch.git", :tag => "#{s.version}" }
 
+  # Swift version
+  s.swift_version = '4.2'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
