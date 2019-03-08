@@ -11,7 +11,7 @@ import Foundation
 /**
     - param block: Needs to be @escaping otherwise we won't be able to pass throwing closures.
  */
-func objcTry<T>(block: @escaping () throws -> T) throws -> T {
+public func objcTry<T>(block: @escaping () throws -> T) throws -> T {
     var result: T?
     var error: Error?
     
