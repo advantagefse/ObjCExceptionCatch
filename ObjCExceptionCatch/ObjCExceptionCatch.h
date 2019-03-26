@@ -2,8 +2,6 @@
 //  ObjCExceptionCatch.h
 //  ObjCExceptionCatch
 //
-//  Created by Christos Chryssochoidis on 07/Mar/2019.
-//  First version by Akis Vavouranakis on 23/Nov/2018.
 //  Copyright © 2018 Advantage FSE. All rights reserved.
 //
 

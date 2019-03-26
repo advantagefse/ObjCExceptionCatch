@@ -2,7 +2,6 @@
 //  ObjCExceptionCatch.swift
 //  ObjCExceptionCatch
 //
-//  Created by Christos Chryssochoidis on 07/03/2019.
 //  Copyright © 2019 Advantage FSE. All rights reserved.
 //
 

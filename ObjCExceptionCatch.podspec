@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ObjCExceptionCatch"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "Small wrapper function that catches NSExceptions and converts them to NSErrors."
 
   # This description is used to generate tags and improve search results.
@@ -55,7 +55,11 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Christos Chryssochoidis" => "c.chryssochoidis@afse.eu" }
+  s.author             = {
+      "Christos Koninis" => "c.koninis@afse.eu",
+      "Akis Vavouranakis" => "a.vavouranakis@afse.eu",
+      "Christos Chryssochoidis" => "c.chryssochoidis@afse.eu"
+  }
   # Or just: s.author    = "Christos Chryssochoidis"
   # s.authors            = { "Christos Chryssochoidis" => "c.chryssochoidis@afse.eu" }
   # s.social_media_url   = "http://twitter.com/Christos Chryssochoidis"
