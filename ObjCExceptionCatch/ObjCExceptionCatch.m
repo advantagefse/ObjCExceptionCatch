@@ -9,7 +9,7 @@
 
 @implementation ObjC
 
-+ (BOOL)catchException:(void (^_Nonnull)(void))tryBlock error:(NSError **)error
++ (BOOL)catchException:(void (NS_NOESCAPE ^)(void))tryBlock error:(NSError **)error
 {
     if (!tryBlock) {
         return YES;
