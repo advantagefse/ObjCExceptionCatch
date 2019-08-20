@@ -15,6 +15,8 @@ FOUNDATION_EXPORT const unsigned char ObjCExceptionCatchVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ObjCExceptionCatch/PublicHeader.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface ObjC: NSObject
 
 /**
@@ -27,7 +29,8 @@ FOUNDATION_EXPORT const unsigned char ObjCExceptionCatchVersionString[];
  *  @param error Out parameter that will contain the error to which we converted any NSException.
  *  @return No, if given block throws an NSException and Yes, if it doesn't.
  */
-+ (BOOL)catchException:(void (^_Nonnull)(void))tryBlock error:(NSError **)error;
++ (BOOL)catchException:(void (NS_NOESCAPE ^)(void))tryBlock error:(NSError **)error;
 
 @end
 
+NS_ASSUME_NONNULL_END
